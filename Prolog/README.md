@@ -1,6 +1,6 @@
 # Prolog
 Ejercicios de Prolog
-###Integrantes: 
+**Integrantes**: 
 - Juan Camilo Sarmiento Reyes
 - David Castelblanco
 - Miguel Angel Rodriguez Bermudez
