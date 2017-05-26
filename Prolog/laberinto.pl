@@ -32,4 +32,8 @@ conecta([4,6],fin).
 filas([X,Z],[X,W]) :- conecta([X,Z],[X,W]).
 columnas([Z,Y],[W,Y]) :- conecta([Z,Y],[W,Y]).
 
+camino([fin|RestoDelCamino],[fin|resCamino]).
+camino([actual|resCamino],Sol) :- conectado(actual,siguiente),\+ filas(siguiente,resCamino),\+ columnas(siguiente,resCamino)
+					   camino([siguiente,actual|resCamino],Sol).
+
 resolver :- filas(inicio,[_,_]), columnas([_,_],fin).
